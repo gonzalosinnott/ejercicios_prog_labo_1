@@ -14,10 +14,10 @@
 #include <stdlib.h>
 
 //prototipo de la funcion declarado
-float suma (float numeroUno, float numeroDos, float *resultado);
-float resta (float numeroUno, float numeroDos, float *resultado);
-float multiplicacion (float numeroUno, float numeroDos, float *resultado);
-float division (float numeroUno, float numeroDos, float *resultado);
+int suma (float numeroUno, float numeroDos, float *resultado);
+int resta (float numeroUno, float numeroDos, float *resultado);
+int multiplicacion (float numeroUno, float numeroDos, float *resultado);
+int division (float numeroUno, float numeroDos, float *resultado);
 int getFloat(char *mensaje, char *mensajeError, int reintentos, float *resultado);
 
 int main(void)
@@ -66,34 +66,43 @@ int main(void)
 }
 
 //Desarrollo de las funciones extra
-float suma (float numeroUno, float numeroDos, float *resultado)
+int suma (float numeroUno, float numeroDos, float *resultado)
 {
 	int retorno = -1;
-	*resultado = numeroUno + numeroDos;
-	retorno = 0;
+	if(resultado != NULL)
+	{
+		*resultado = numeroUno + numeroDos;
+		retorno = 0;
+	}
 	return retorno;
 }
 
-float resta (float numeroUno, float numeroDos, float *resultado)
+int resta (float numeroUno, float numeroDos, float *resultado)
 {
 	int retorno = -1;
-	*resultado = numeroUno - numeroDos;
-	retorno = 0;
+	if(resultado != NULL)
+	{
+		*resultado = numeroUno - numeroDos;
+		retorno = 0;
+	}
 	return retorno;
 }
 
-float multiplicacion (float numeroUno, float numeroDos, float *resultado)
+int multiplicacion (float numeroUno, float numeroDos, float *resultado)
 {
 	int retorno = -1;
-	*resultado = numeroUno * numeroDos;
-	retorno = 0;
+	if(resultado != NULL)
+	{
+		*resultado = numeroUno * numeroDos;
+		retorno = 0;
+	}
 	return retorno;
 }
 
-float division (float numeroUno, float numeroDos, float *resultado)
+int division (float numeroUno, float numeroDos, float *resultado)
 {
 	int retorno = -1;
-	if(numeroDos != 0)
+	if(resultado != NULL && numeroDos != 0)
 	{
 		*resultado = numeroUno / numeroDos;
 		retorno = 0;
