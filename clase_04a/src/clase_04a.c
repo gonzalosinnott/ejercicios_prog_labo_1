@@ -14,16 +14,31 @@
 
 #include <stdio_ext.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include "utn.h"
 
 int main(void)
 {
 	int numeroEnteroIngresado;
+	float numeroFloatIngresado;
+	char caracterIngresado;
 
 	if(utn_getEntero(&numeroEnteroIngresado, 0, 100, "\nIngrese un numero entre 0 y 100:", "\nError, ingrese un numero entre 0 y 100.", 3)==0)
 	{
 		printf("\nEl numero ingresado es %d.", numeroEnteroIngresado);
 	}
+
+	if(utn_getFloat(&numeroFloatIngresado, 0, 100, "\nIngrese un numero con decimales entre 0 y 100:", "\nError, ingrese un numero con decimales entre 0 y 100.", 3)==0)
+	{
+		printf("\nEl numero ingresado es %f.", numeroFloatIngresado);
+	}
+
+	if(utn_getChar(&caracterIngresado, "\nIngrese una letra:", "Error, no es una letra.", 3)==0)
+	{
+		printf("\nLa letra ingresada es %c.", caracterIngresado);
+	}
+
+	return EXIT_SUCCESS;
 
 }
 
