@@ -1,8 +1,11 @@
 /*
- * utn.h
- *
- *  Created on: 3 sept. 2020
- *      Author: Gonzalo Sinnott Segura
+ ============================================================================
+ Name        : utn.c
+ Author      : Gonzalo Sinnott Segura
+ Version     :
+ Copyright   :
+ Description : Header de la biblioteca utn.c - Created on: 3 sept. 2020
+ ============================================================================
  */
 
 #ifndef UTN_H_

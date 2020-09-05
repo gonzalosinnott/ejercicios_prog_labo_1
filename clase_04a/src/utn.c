@@ -4,11 +4,9 @@
  Author      : Gonzalo Sinnott Segura
  Version     :
  Copyright   :
- Description : Biblioteca utn.c
+ Description : Biblioteca utn.c - Created on: 3 sept. 2020
  ============================================================================
  */
-
-
 
 #include <stdio_ext.h>
 #include <stdlib.h>
@@ -23,7 +21,7 @@
  * \param msg: El mensaje que imprime para pedir un valor
  * \param msgError: El mensaje que imprime si el rango no es valido
  * \param intentos: Intentos totales que quiero dejar al usuario ingresar un valor no valido.
- * \return Retorno: 0: si esta OK. -1: Si hubo un error
+ * \return retorno: 0: si esta OK. -1: Si hubo un error
  */
 
 int utn_getEntero(int* pValor, int min, int max, char* msj, char* msjError, int intentos)
@@ -63,7 +61,7 @@ int utn_getEntero(int* pValor, int min, int max, char* msj, char* msjError, int 
  * \param msg: El mensaje que imprime para pedir un valor
  * \param msgError: El mensaje que imprime si el rango no es valido
  * \param intentos: Intentos totales que quiero dejar al usuario ingresar un valor no valido.
- * \return Retorno: 0: si esta OK. -1: Si hubo un error
+ * \return retorno: 0: si esta OK. -1: Si hubo un error
  */
 
 int utn_getFloat(float* pValor, int min, int max, char* msj, char* msjError, int intentos)
@@ -101,7 +99,7 @@ int utn_getFloat(float* pValor, int min, int max, char* msj, char* msjError, int
  * \param msg: El mensaje que imprime para pedir un valor
  * \param msgError: El mensaje que imprime si el rango no es valido
  * \param intentos: Intentos totales que quiero dejar al usuario ingresar un valor no valido.
- * \return Retorno: 0: si esta OK. -1: Si hubo un error
+ * \return retorno: 0: si esta OK. -1: Si hubo un error
  */
 
 int utn_getChar(char* pValor,char* msj, char* msjError, int intentos)

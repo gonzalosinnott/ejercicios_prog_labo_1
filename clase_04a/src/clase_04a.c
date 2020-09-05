@@ -21,7 +21,7 @@ int main(void)
 {
 	int numeroEnteroIngresado;
 	float numeroFloatIngresado;
-	char caracterIngresado;
+	char letraIngresada;
 
 	if(utn_getEntero(&numeroEnteroIngresado, 0, 100, "\nIngrese un numero entre 0 y 100:", "\nError, ingrese un numero entre 0 y 100.", 3)==0)
 	{
@@ -33,9 +33,9 @@ int main(void)
 		printf("\nEl numero ingresado es %f.", numeroFloatIngresado);
 	}
 
-	if(utn_getChar(&caracterIngresado, "\nIngrese una letra:", "Error, no es una letra.", 3)==0)
+	if(utn_getChar(&letraIngresada, "\nIngrese una letra:", "Error, no es una letra.", 3)==0)
 	{
-		printf("\nLa letra ingresada es %c.", caracterIngresado);
+		printf("\nLa letra ingresada es %c.", letraIngresada);
 	}
 
 	return EXIT_SUCCESS;
