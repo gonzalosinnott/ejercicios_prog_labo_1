@@ -36,7 +36,7 @@ int main(void) {
 		arrayInt[i] = numeroIngresado;
 	}
 
-	if(getEnteroConRango(&opcionElegida, 1, 3, "\nElegir una opcion:\n 1-Calcular Maximo\n 2-Calcular Minimo\n 3-Calcular Promedio\nOpcion:", "Error, no es una opcion valida.", 3)==0)
+	if(getEnteroConRango(&opcionElegida, 1, 4, "\nElegir una opcion:\n 1-Calcular Maximo\n 2-Calcular Minimo\n 3-Calcular Promedio\nOpcion:", "Error, no es una opcion valida.", 3)==0)
 	{
 		switch(opcionElegida)
 		{

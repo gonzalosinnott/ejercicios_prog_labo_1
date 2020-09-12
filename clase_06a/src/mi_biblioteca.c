@@ -394,21 +394,40 @@ int sortArrayEnteros(int array[], int elementos)
 	int swap;
 	int ordenado = 0;
 
-	while(ordenado == 0)
+	if(array!=NULL && elementos > 0)
 	{
-		ordenado = 1;
-		for(indice = 0; indice <(elementos -1);indice++)
+		while(ordenado == 0)
 		{
-			if(array[indice]>array[indice+1])
+			ordenado = 1;
+			for(indice = 0; indice <(elementos -1);indice++)
 			{
-				swap =array[indice];
-				array[indice] = array[indice+1];
-				array[indice+1]=swap;
-				ordenado = 0;
+				if(array[indice]>array[indice+1])
+				{
+					swap =array[indice];
+					array[indice] = array[indice+1];
+					array[indice+1]=swap;
+					ordenado = 0;
+				}
 			}
 		}
+		retorno = 0;
 	}
-	retorno = 0;
+	return retorno;
+}
+
+int printArray(int array[], int elementos)
+{
+	int retorno = -1;
+	int i;
+
+	if(array != NULL && elementos > 0)
+	{
+		for(i = 0; i < elementos; i++)
+		{
+			printf("%d ", array[i]);
+		}
+		retorno = 0;
+	}
 	return retorno;
 }
 

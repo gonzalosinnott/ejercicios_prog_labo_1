@@ -27,7 +27,7 @@ int getMaxEntero(int* resultado, int pArray[],int elementos);
 int getMinEntero(int* resultado, int pArray[],int elementos);
 int getPromedioEntero(float* resultado, int pArray[],int elementos);
 int sortArrayEnteros(int array[], int indice);
-
+int printArray(int array[], int elementos);
 
 
 #endif /* MI_BIBLIOTECA_H_ */
