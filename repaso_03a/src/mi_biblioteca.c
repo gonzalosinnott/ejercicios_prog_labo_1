@@ -11,7 +11,6 @@
 #include <stdio_ext.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include <string.h>
 
 /*
  * \brief getEntero : Pide al usuario un numero entero.
@@ -416,7 +415,7 @@ int sortArrayEnteros(int array[], int elementos)
 	return retorno;
 }
 
-int printArrayInt(int array[], int elementos)
+int printArray(int array[], int elementos)
 {
 	int retorno = -1;
 	int i;
@@ -426,21 +425,6 @@ int printArrayInt(int array[], int elementos)
 		for(i = 0; i < elementos; i++)
 		{
 			printf("%d ", array[i]);
-		}
-		retorno = 0;
-	}
-	return retorno;
-}
-
-int printArrayChar(char array[], int elementos)
-{
-	int retorno = -1;
-
-	if(array != NULL)
-	{
-		for(int i = 0;i <= '\0';i++)
-		{
-			printf("%c\n", array[i]);
 		}
 		retorno = 0;
 	}

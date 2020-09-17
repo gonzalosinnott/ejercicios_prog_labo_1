@@ -12,14 +12,16 @@
 #include <stdlib.h>
 #include "mi_biblioteca.h"
 
+#define  ARRAY_LEN 10
+
 int main(void) {
 
-	char texto [10];
+	char texto [ARRAY_LEN];
 
 	texto[0] = 'H';
 	texto[1] = 'O';
 	texto[2] = 'L';
 	texto[3] = 'A';
 
-	printArrayChar(texto);
+	printArrayChar(texto, ARRAY_LEN);
 }
