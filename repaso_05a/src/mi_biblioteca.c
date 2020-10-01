@@ -234,7 +234,7 @@ int utn_getChar(char* pResultado,char* mensaje,char* mensajeError,char valorUno,
 	{
 		do{
 			printf("%s", mensaje);
-			__fpurge(stdin);
+			__purge(stdin);
 			resultadoScan = scanf("%c",&bufferChar);
 			if(resultadoScan == 1 && (bufferChar == valorUno || bufferChar == valorDos))
 			{
